@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antarctica Research Project</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e8f7ff;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to bottom, #007bff, #00bfff);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero img {
+    width: 90%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    animation: float 5s infinite ease-in-out;
+}
+
+/* FLOATING ANIMATION */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* SECTION */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* IMAGES */
+.image-box {
+    width: 80%;
+    margin: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+/* FADE IN */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* FOOTER */
+footer {
+    background: #004e89;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Antarctica Research Project</h1>
+    <p>Exploring the Coldest Place on Earth</p>
+</header>
+
+<!-- HERO IMAGE -->
+<div class="hero">
+    <img src="images/penguins.jpg" alt="Antarctica Wildlife">
+</div>
+
+<!-- SECTION 1 -->
+<section>
+    <h2>Beautiful Antarctica Landscapes</h2>
+    <div class="image-box">
+        <img src="images/mountains.jpg" alt="Antarctica Mountains">
+    </div>
+</section>
+
+<!-- SECTION 2 -->
+<section>
+    <h2>Antarctica Map & Key Locations</h2>
+    <div class="image-box">
+        <img src="images/map.png" alt="Antarctica Map">
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Antarctica Research Team | Educational Project</p>
+</footer>
+
+</body>
+</html>
