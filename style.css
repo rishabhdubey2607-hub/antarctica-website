@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Parallax Hero */
+.hero {
+    background-image: url('images/444d3bd0-b395-41dd-8fba-680ae37a9ab0.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px #00faff;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #00faff; }
+    to { text-shadow: 0 0 25px cyan; }
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 60px;
+    background: #021b2a;
+    color: white;
+    text-align: center;
+}
+
+.gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px cyan;
+    transform: translateY(40px);
+    opacity: 0;
+    animation: fadeUp 2s forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
